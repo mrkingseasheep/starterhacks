@@ -1,4 +1,10 @@
-todo = []
+import pickle
+
+try:
+    with open('todo_list.pkl', 'rb') as file:
+        todo = pickle.load(file)
+except FileNotFoundError:
+    todo = []
 
 while 1 != 2:
     print("\n===== To-Do List =====")
@@ -29,3 +35,6 @@ while 1 != 2:
 
     else:
         print("Invalid choice. Please try again.")
+
+    with open('todo_list.pkl', 'wb') as file:
+        pickle.dump(todo, file)
