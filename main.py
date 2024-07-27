@@ -1,32 +1,31 @@
 todo = []
 
-print('Welcome to your todo list! :D')
-print('1 - show todo list')
-print('2 - add a task')
-print('3 - complete a task')
+while 1 != 2:
+    print("\n===== To-Do List =====")
+    print("1. Add Task")
+    print("2. Show Tasks")
+    print("3. Mark Task as Done")
 
-choice = int(input('Enter your choice (1, 2, or 3): '))
+    choice = input("Enter your choice: ")
 
-if choice == 1:
-    print('\ntodo:')
-    for index, task in enumerate(todo):
-        status = "Done" if task["done"] else "Not Done"
-        print(f"{index + 1}. {task['task']} - {status}")
+    if choice == '1':
+        task = input("Enter the task: ")
+        todo.append({"task": task, "complete": False})
+        print("Task added!")
 
-elif choice == 2:
-    task = input('Enter new task: ')
-    todo.append({'task': task, 'done': False})
-    print('Task added to list')
+    elif choice == '2':
+        print("\nTasks:")
+        for index, task in enumerate(todo):
+            status = "complete" if task["complete"] else "incomplete"
+            print(f"{index + 1}. {task['task']} - {status}")
 
-elif choice == '3':
-            task_index = int(input('Enter the number corresponding to completed task')) - 1
-            if 0 <= task_index < len(todo):
-                todo[task_index]["done"] = True
-                print("Task marked as done!")
-            else:
-                print("Invalid task number.")
+    elif choice == '3':
+        task_index = int(input("Enter the task number to mark as done: ")) - 1
+        if 0 <= task_index < len(todo):
+            todo[task_index]["complete"] = True
+            print("Task marked as done!")
+        else:
+            print("Invalid task number.")
 
-else:
-    print("Invalid choice. Please try again.")
- 
-
+    else:
+        print("Invalid choice. Please try again.")
