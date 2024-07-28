@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
+    <script src="./index.js" defer></script>
     <title>Todo</title>
   </head>
   <body>
@@ -27,7 +27,11 @@
         <div class="counter-container">
           <p><span id="todoCount">0</span> tasks remaining</p>
           <p><span id="totalCount">0</span> tasks total</p>
+          <p>Completed tasks: <span id="completedCount">0</span></p>
         </div>
+        <div id="image-container">
+          <img id="conditional-image" src="" alt="Conditionally Displayed Image">
+      </div>
       </div>
     </section>
   </body>
