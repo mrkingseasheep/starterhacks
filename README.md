@@ -45,3 +45,7 @@ First, clone the repository at https://github.com/mrkingseasheep/starterhacks/
 `git clone https://github.com/mrkingseasheep/starterhacks.git`
 
 Then open `index.html` with your favorite web browser.
+
+## TODO List :D
+
+- [ ] Add mushrooms
