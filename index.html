@@ -8,36 +8,33 @@
     <title>Todo</title>
   </head>
   <body>
-    <section class="todo">
-      <h2>Your Todo list :D</h2>
-      <div class="input">
-        <input
-          type="text"
-          class="input-field"
-          id="todoInput"
-          placeholder="Add a new task"
-        />
-        <button class="btn">Add</button>
-      </div>
-      <ul class="scroll">
-        <li id="todoList"></li>
-      </ul>
-      <div>
-        <hr class="counter" />
-        <div class="counter-container">
-          <p><span id="todoCount">0</span> tasks remaining</p>
-          <p><span id="totalCount">0</span> tasks total</p>
-          <p><span id="completedCount">0</span> completed tasks</p>
-        </div>
-        <div id="image-container">
-          <img
-            id="conditional-image"
-            src=""
-            alt="Conditionally Displayed Image"
+    <div id="container">
+      <section class="todo" id="content">
+        <h2>Your Todo list :D</h2>
+        <div class="input">
+          <input
+            type="text"
+            class="input-field"
+            id="todoInput"
+            placeholder="Add a new task"
           />
+          <button class="btn">Add</button>
         </div>
+        <ul class="scroll">
+          <li id="todoList"></li>
+        </ul>
+        <div>
+          <hr class="counter" />
+          <div class="counter-container">
+            <p><span id="todoCount">0</span> tasks remaining</p>
+            <p><span id="totalCount">0</span> tasks total</p>
+            <p>Completed tasks: <span id="completedCount">0</span></p>
+          </div>
+        </div>
+      </section>
+      <div id="image-container">
+        <img id="conditional-image" src="" alt="Conditionally Displayed Image" />
       </div>
-    </section>
+    </div>
   </body>
 </html>
-
