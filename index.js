@@ -109,7 +109,7 @@ function saveToLocalStorage() {
 function updateImage(completedTasks) {
     let imageUrl = '';
 
-  if (completedTasks == 0) {
+  if (completedTasks <= 0) {
     imageUrl = 'images\\bonsai_0.jpg'; 
     console.log("help");
   } else if (completedTasks==1) {
@@ -131,7 +131,7 @@ function updateImage(completedTasks) {
   } else if (completedTasks==9) {
     imageUrl = 'images\\bonsai_9.jpg'; 
   } else { //either keep the tree or add mushroom
-    
+    imageUrl = 'images\\bonsai_9.jpg'; 
   }
 
   if (imageUrl) {
@@ -142,15 +142,3 @@ function updateImage(completedTasks) {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
