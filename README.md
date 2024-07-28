@@ -18,7 +18,7 @@ Looking to add a bit of spice to your boring, everyday TODO apps? Task Tree serv
 
 Initially our project was designed for TUI, but, we ran into various issues with the python module framework we were using. The framework allowed capabilities such as animations, mouse support, and open widgets all from inside the terminal. Now the issues experienced with this method was primarily due to unclear documentation as when incorporating two separate widgets they would consistently overwrite one another. Other UI printing errors continued arising the more we added to the project. Consequently we changed our approach to this project to a web app using HTML, JS, and CSS that we present to you today.
 
-## Deployment
+## 🤖 Deployment
 
 See if it's for you at https://mrkingseasheep.github.io/starterhacks/
 
@@ -32,7 +32,7 @@ Check to see if the container downloaded. You should see `mrkingseasheep/task-tr
 
 `docker images`
 
-Run the Docker container.
+Run the Docker container. If you are not part of the docker group, run with sudo.
 
 `docker run -dp 80:80 mrkingseasheep/task-tree`
 
@@ -40,9 +40,7 @@ Open your favorite web browser and type in http://localhost
 
 ### git
 
-Access project from this link -> https://mrkingseasheep.github.io/starterhacks/
-
-First, clone the repository.
+First, clone the repository at https://github.com/mrkingseasheep/starterhacks/
 
 `git clone https://github.com/mrkingseasheep/starterhacks.git`
 
