@@ -36,6 +36,8 @@ Run the Docker container.
 
 `docker run -dp 80:80 mrkingseasheep/task-tree`
 
+Open your favorite web browser and type in http://localhost
+
 ### git
 
 Access project from this link -> https://mrkingseasheep.github.io/starterhacks/
