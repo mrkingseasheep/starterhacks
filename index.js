@@ -110,26 +110,26 @@ function updateImage(completedTasks) {
     let imageUrl = '';
 
   if (completedTasks == 0) {
-    imageUrl = 'bonsai_0.jpg'; 
+    imageUrl = 'images\\bonsai_0.jpg'; 
     console.log("help");
   } else if (completedTasks==1) {
-    imageUrl = 'bonsai_1.jpg'; 
+    imageUrl = 'images\\bonsai_1.jpg'; 
   } else if (completedTasks ==2) {
-    imageUrl = 'bonsai_2.jpg';
+    imageUrl = 'images\\bonsai_2.jpg';
   } else if (completedTasks ==3) {
-    imageUrl = 'bonsai_3.jpg';
+    imageUrl = 'images\\bonsai_3.jpg';
   } else if (completedTasks==4) {
-    imageUrl = 'bonsai_4.jpg'; 
+    imageUrl = 'images\\bonsai_4.jpg'; 
   } else if (completedTasks ==5) {
-    imageUrl = 'bonsai_5.jpg';
+    imageUrl = 'images\\bonsai_5.jpg';
   } else if (completedTasks ==6) {
-    imageUrl = 'bonsai_6.jpg';
+    imageUrl = 'images\\bonsai_6.jpg';
   } else if (completedTasks ==7) {
-    imageUrl = 'bonsai_7.jpg';
+    imageUrl = 'images\\bonsai_7.jpg';
   } else if (completedTasks ==8) {
-    imageUrl = 'bonsai_8.jpg';
+    imageUrl = 'images\\bonsai_8.jpg';
   } else if (completedTasks==9) {
-    imageUrl = 'bonsai_9.jpg'; 
+    imageUrl = 'images\\bonsai_9.jpg'; 
   } else { //either keep the tree or add mushroom
     
   }
