@@ -62,7 +62,7 @@ function displayTasks() {
   });
 
   const totalTasks = todo.length;
-  const activeTasks = todo.filter(item => !item.disabled).length;
+  const activeTasks = todo.filter((item) => !item.disabled).length;
   const completedTasks = totalTasks - activeTasks;
 
   totalCount.textContent = totalTasks;
@@ -107,38 +107,37 @@ function saveToLocalStorage() {
 }
 
 function updateImage(completedTasks) {
-    let imageUrl = '';
+  let imageUrl = "";
 
   if (completedTasks <= 0) {
-    imageUrl = 'images\\bonsai_0.jpg'; 
-    console.log("help");
-  } else if (completedTasks==1) {
-    imageUrl = 'images\\bonsai_1.jpg'; 
-  } else if (completedTasks ==2) {
-    imageUrl = 'images\\bonsai_2.jpg';
-  } else if (completedTasks ==3) {
-    imageUrl = 'images\\bonsai_3.jpg';
-  } else if (completedTasks==4) {
-    imageUrl = 'images\\bonsai_4.jpg'; 
-  } else if (completedTasks ==5) {
-    imageUrl = 'images\\bonsai_5.jpg';
-  } else if (completedTasks ==6) {
-    imageUrl = 'images\\bonsai_6.jpg';
-  } else if (completedTasks ==7) {
-    imageUrl = 'images\\bonsai_7.jpg';
-  } else if (completedTasks ==8) {
-    imageUrl = 'images\\bonsai_8.jpg';
-  } else if (completedTasks==9) {
-    imageUrl = 'images\\bonsai_9.jpg'; 
-  } else { //either keep the tree or add mushroom
-    imageUrl = 'images\\bonsai_9.jpg'; 
+    imageUrl = "images\\bonsai_0.jpg";
+  } else if (completedTasks == 1) {
+    imageUrl = "images\\bonsai_1.jpg";
+  } else if (completedTasks == 2) {
+    imageUrl = "images\\bonsai_2.jpg";
+  } else if (completedTasks == 3) {
+    imageUrl = "images\\bonsai_3.jpg";
+  } else if (completedTasks == 4) {
+    imageUrl = "images\\bonsai_4.jpg";
+  } else if (completedTasks == 5) {
+    imageUrl = "images\\bonsai_5.jpg";
+  } else if (completedTasks == 6) {
+    imageUrl = "images\\bonsai_6.jpg";
+  } else if (completedTasks == 7) {
+    imageUrl = "images\\bonsai_7.jpg";
+  } else if (completedTasks == 8) {
+    imageUrl = "images\\bonsai_8.jpg";
+  } else if (completedTasks == 9) {
+    imageUrl = "images\\bonsai_9.jpg";
+  } else {
+    //either keep the tree or add mushroom
+    imageUrl = "images\\bonsai_9.jpg";
   }
 
   if (imageUrl) {
     imageElement.src = imageUrl;
-    imageElement.style.display = 'block';
+    imageElement.style.display = "block";
   } else {
-    imageElement.style.display = 'none';
+    imageElement.style.display = "none";
   }
-
 }
