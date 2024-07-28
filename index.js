@@ -127,11 +127,10 @@ function updateImage(completedTasks) {
     imageUrl = "images\\bonsai_7.jpg";
   } else if (completedTasks == 8) {
     imageUrl = "images\\bonsai_8.jpg";
-  } else if (completedTasks == 9) {
+  } else if (completedTasks >= 9 && completedTasks <= 14) {
     imageUrl = "images\\bonsai_9.jpg";
   } else {
-    //either keep the tree or add mushroom
-    imageUrl = "images\\bonsai_9.jpg";
+    imageUrl = "images\\mushroom.jpg";
   }
 
   if (imageUrl) {
